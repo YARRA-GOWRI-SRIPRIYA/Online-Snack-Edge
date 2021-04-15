@@ -7,3 +7,7 @@ Simple Snack Ordering System is based on the concept of ordering and serving foo
 
 
 [![Unit testing](https://github.com/YARRA-GOWRI-SRIPRIYA/Online-Snack-Edge/actions/workflows/unittest.yml/badge.svg)](https://github.com/YARRA-GOWRI-SRIPRIYA/Online-Snack-Edge/actions/workflows/unittest.yml)
+
+
+
+[![CI](https://github.com/YARRA-GOWRI-SRIPRIYA/Online-Snack-Edge/actions/workflows/build1.yml/badge.svg)](https://github.com/YARRA-GOWRI-SRIPRIYA/Online-Snack-Edge/actions/workflows/build1.yml)
