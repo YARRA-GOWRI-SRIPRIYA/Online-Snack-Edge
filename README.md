@@ -3,7 +3,7 @@ Simple Snack Ordering System is based on the concept of ordering and serving foo
 
 
 
-![](https://github.com/YARRA-GOWRI-SRIPRIYA/Online-Snack-Edge/blob/master/snacks-flyer-template-5c87a4415ee68e24dd29d0c4fa288846.jpg)
+![](https://d1csarkz8obe9u.cloudfront.net/posterpreviews/snack-shop-poster-template-design-4406afc12e75f0ab34d43e13ced7da1d.jpg?ts=1569323847)
 
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/f256d0c9b25f4b7898f277e5c6899106)](https://www.codacy.com/gh/YARRA-GOWRI-SRIPRIYA/Online-Snack-Edge/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=YARRA-GOWRI-SRIPRIYA/Online-Snack-Edge&amp;utm_campaign=Badge_Grade)
 
