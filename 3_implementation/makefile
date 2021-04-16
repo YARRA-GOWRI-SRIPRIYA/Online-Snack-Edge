@@ -8,7 +8,7 @@ SRC =src/maincode.c
 
 # All test source files
 TEST_SRC = src/maincode.c\
-test/testing.c\
+test/testfinl.c\
 unity/unity.c\
 
 TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
