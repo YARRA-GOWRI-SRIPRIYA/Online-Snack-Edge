@@ -22,4 +22,4 @@ jobs:
     - name: make test
       run: |
         make test -C 3_implementation/
-        valgrind ./3_implementation/build/Test_manage.out
+        valgrind ./3_implementation/build/Test_Snackorder.out
