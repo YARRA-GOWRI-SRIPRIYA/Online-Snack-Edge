@@ -1,14 +1,58 @@
-SRC = unity/unity.c\
-src/maincode.c\
-test/testfinl.c\
+PROJECT_NAME = Snackorder
 
-INC = -Iunity\
--Iinc\
+# Output directory
+BUILD = build
 
-PROJECT_NAME = Snackorder.exe
+# All source code files
+SRC =src/maincode.c
 
-$(PROJECT_NAME): $(SRC)
-	gcc $(SRC) $(INC) -o $(PROJECT_NAME)
+# All test source files
+TEST_SRC = src/maincode.c\
+test/testing.c\
+unity/unity.c\
 
+TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
+
+# All include folders with header files
+INC	= -Iinc\
+-Iunity\
+
+#Library Inlcudes
+#INCLUDE_LIBS = 
+INCLUDE_LIBS = -lcunit
+
+# Project Output name
+PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).out
+
+# Document files
+DOCUMENTATION_OUTPUT = documentation/html
+
+# Default target built
+$(PROJECT_NAME):all
+
+# Run the target even if the matching name exists
+.PHONY: run clean test doc all
+
+all: $(SRC) $(BUILD)
+	gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT).out
+
+# Call `make run` to run the application
 run:$(PROJECT_NAME)
-	./${PROJECT_NAME}
+	./$(PROJECT_OUTPUT).out
+
+# Document the code using Doxygen
+doc:
+	make -C ./Documentation
+
+# Build and run the unit tests
+test:$(BUILD)
+	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) $(INCLUDE_LIBS)
+	./$(TEST_OUTPUT)
+
+# Remove all the built files, invoke by `make clean`
+clean:
+	rm -rf $(BUILD) $(DOCUMENTATION_OUTPUT)
+
+# Create new build folder if not present
+$(BUILD):
+	mkdir build
